@@ -171,6 +171,11 @@ button:hover {
     flex-direction: column;
     align-items: center;
   }
+
+  #results {
+    margin-bottom: 140px;
+    /* Adiciona espaço na parte inferior do contêiner de resultados */
+  }
 }
 
 @media screen and (min-width: 601px) {

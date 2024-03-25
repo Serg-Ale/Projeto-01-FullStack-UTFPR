@@ -3,9 +3,10 @@ function displayResults(results, searchType) {
   const resultsContainer = document.getElementById("results");
   resultsContainer.innerHTML = "";
 
-  if (results.length === 0) {
+  if (!results || results.length === 0) {
+    // Verificar se 'results' é indefinido ou vazio
     resultsContainer.innerHTML =
-      "No results found. Please enter a search input";
+      "No results found. Please enter a valid search input";
     return;
   }
 
