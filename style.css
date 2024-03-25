@@ -79,7 +79,6 @@ button:hover {
   border: 2px solid #3cff00;
 }
 
-
 #results {
   display: flex;
   flex-direction: column;
@@ -107,7 +106,6 @@ button:hover {
   border-radius: 20px;
 }
 
-
 .item-text {
   margin: auto;
 }
@@ -116,10 +114,26 @@ button:hover {
   color: red;
 }
 
+@media screen and (max-width: 400px) {
+
+  /* Aumentar a fonte em dispositivos muito pequenos */
+  body {
+    font-size: 14px;
+  }
+
+  #results {
+    margin-bottom: 140px;
+    /* Adiciona espaço na parte inferior do contêiner de resultados */
+  }
+}
 
 @media screen and (max-width: 600px) {
+  /* Ajustes para telas menores */
+
   header {
     padding: 10px;
+    margin-bottom: 10px;
+    /* Adicionando um pouco de margem inferior */
   }
 
   main {
@@ -146,16 +160,11 @@ button:hover {
     max-width: 100%;
     margin-bottom: 10px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  main {
-    max-width: 1000px;
+  footer {
+    text-align: left;
+    /* Alinhamento do texto do footer para telas menores */
   }
-}
-
-@media screen and (max-width: 600px) {
-  /* Outras regras de mídia para telas menores */
 
   #pagination {
     display: flex;
@@ -172,5 +181,13 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Ajuste para telas maiores */
+
+  main {
+    max-width: 1000px;
   }
 }
