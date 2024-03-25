@@ -24,7 +24,7 @@ Os critérios de avaliação deste projeto incluem:
 
 ## API Selecionada
 
-Para este projeto, selecioneu a seguinte API JSON para consumo:
+Para este projeto, selecionei a seguinte API JSON para consumo:
 
 - **Nome da API:** Rick and Morty API
 - **Descrição:** A Rick and Morty API é uma API gratuita e aberta que fornece acesso a informações sobre personagens, episódios, locais e muito mais do universo da famosa série animada "Rick and Morty".
