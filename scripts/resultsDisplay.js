@@ -13,8 +13,6 @@ function displayResults(results, searchType) {
     const item = createResultItem(result, searchType);
     resultsContainer.appendChild(item);
   });
-
-  resultsContainer.appendChild(resultsContainer);
 }
 
 function createResultItem(result, searchType) {

@@ -1,4 +1,3 @@
-// pagination.js
 function displayPagination(info, searchType, searchTerm) {
   const totalPages = info.pages;
   const currentPage = getPageNumberFromUrl(info.prev) + 1;
