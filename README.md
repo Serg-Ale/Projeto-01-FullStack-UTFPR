@@ -32,8 +32,8 @@ Para este projeto, selecioneu a seguinte API JSON para consumo:
 
 ## Instruções para Execução
 
-1. Clone este repositório: `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
-2. Navegue até o diretório do projeto: `cd nome-do-repositorio`
+1. Clone este repositório: `git clone https://github.com/Serg-Ale/Projeto-01-FullStack-UTFPR.git`
+2. Navegue até o diretório do projeto: `Projeto-01-FullStack-UTFPR`
 3. Abra o arquivo `index.html` em seu navegador web preferido.
 
 ## Contribuição
