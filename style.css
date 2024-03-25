@@ -115,3 +115,43 @@ button:hover {
 #dead {
   color: red;
 }
+
+
+/* Estilos para telas menores */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  main {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 90%;
+  }
+
+  #pagination {
+    width: 90%;
+  }
+
+  select,
+  input[type="text"],
+  button {
+    font-size: 14px;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .item-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilos para telas maiores */
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1000px;
+  }
+}

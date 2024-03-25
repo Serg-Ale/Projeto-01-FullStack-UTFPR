@@ -9,15 +9,12 @@ function displayResults(results, searchType) {
     return;
   }
 
-  const container = document.createElement("div");
-  container.id = "test";
-
   results.forEach((result) => {
     const item = createResultItem(result, searchType);
-    container.appendChild(item);
+    resultsContainer.appendChild(item);
   });
 
-  resultsContainer.appendChild(container);
+  resultsContainer.appendChild(resultsContainer);
 }
 
 function createResultItem(result, searchType) {
