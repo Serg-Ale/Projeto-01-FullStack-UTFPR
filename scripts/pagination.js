@@ -5,17 +5,21 @@ function displayPagination(info, searchType, searchTerm) {
   const paginationContainer = document.getElementById("pagination");
   paginationContainer.innerHTML = "";
 
-  const prevButton = createPaginationButton("Previous", !info.prev);
-  prevButton.addEventListener("click", () => {
-    search(searchType, searchTerm, currentPage - 1);
-  });
-  paginationContainer.appendChild(prevButton);
+  if (info.prev) {
+    const prevButton = createPaginationButton("Previous", false);
+    prevButton.addEventListener("click", () => {
+      search(searchType, searchTerm, currentPage - 1);
+    });
+    paginationContainer.appendChild(prevButton);
+  }
 
-  const nextButton = createPaginationButton("Next", !info.next);
-  nextButton.addEventListener("click", () => {
-    search(searchType, searchTerm, currentPage + 1);
-  });
-  paginationContainer.appendChild(nextButton);
+  if (info.next) {
+    const nextButton = createPaginationButton("Next", false);
+    nextButton.addEventListener("click", () => {
+      search(searchType, searchTerm, currentPage + 1);
+    });
+    paginationContainer.appendChild(nextButton);
+  }
 }
 
 function createPaginationButton(text, disabled) {
