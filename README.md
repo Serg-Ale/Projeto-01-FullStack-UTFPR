@@ -36,6 +36,24 @@ Para este projeto, selecioneu a seguinte API JSON para consumo:
 2. Navegue até o diretório do projeto: `Projeto-01-FullStack-UTFPR`
 3. Abra o arquivo `index.html` em seu navegador web preferido.
 
+## Funcionamento
+
+A aplicação permite a busca por 3 tipos de informações:
+- Character - Personagens da série
+- Location - Planetas, dimensões, lugares, etc...
+- Episode - Episódios específicos
+
+Cada uma das buscas irá retornar uma série de informações diferentes referentes a cada tipo de informação.
+
+### Exemplo
+
+  ![Exemplo de personagem](https://github.com/Serg-Ale/Projeto-01-FullStack-UTFPR/assets/74671270/63c9a22d-b4af-4fd0-ba75-5c0448fd68d3)
+
+  ![Exemplo de localização](https://github.com/Serg-Ale/Projeto-01-FullStack-UTFPR/assets/74671270/84557872-654b-4109-9556-6ea3e8c138b4)
+    
+  ![Exemplo de episódio](https://github.com/Serg-Ale/Projeto-01-FullStack-UTFPR/assets/74671270/62f402b1-55e8-4dc9-bcc7-f241e25008db)
+
+
 ## Contribuição
 
 Este projeto é parte de uma avaliação acadêmica e não está aberto para contribuições externas.
