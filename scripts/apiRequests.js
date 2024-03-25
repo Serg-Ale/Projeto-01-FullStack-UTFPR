@@ -9,6 +9,10 @@ async function search(searchType, searchTerm, page = 1) {
     }
     const data = await response.json();
 
+    // Oculta a mensagem de erro
+    const errorMessageElement = document.getElementById("error-message");
+    errorMessageElement.style.display = "none";
+
     displayResults(data.results, searchType);
     if (data.info) {
       displayPagination(data.info, searchType, searchTerm);
@@ -18,7 +22,7 @@ async function search(searchType, searchTerm, page = 1) {
   } catch (error) {
     console.error("Error fetching data:", error);
     const errorMessageElement = document.getElementById("error-message");
-    errorMessageElement.textContent = "Invalid search or no results found!";
+    errorMessageElement.textContent = "Error fetching data: " + error.message;
     errorMessageElement.style.display = "block";
   }
 }
