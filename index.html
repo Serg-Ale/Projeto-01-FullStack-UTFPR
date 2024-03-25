@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Rick and Morty API Search</title>
+</head>
+
+<body>
+  <header>
+    <h1>Rick and Morty API Search</h1>
+  </header>
+  <main>
+
+    <div id="search">
+      <select id="searchType">
+        <option value="character">Character</option>
+        <option value="location">Location</option>
+        <option value="episode">Episode</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Enter search term...">
+      <button id="searchButton">Search</button>
+    </div>
+    <div id="results"></div>
+
+  </main>
+  <footer>
+    <div id="pagination"></div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
