@@ -23,7 +23,7 @@ function createResultItem(result, searchType) {
   const itemText = document.createElement("div");
   itemText.className = "item-text";
 
-  const name = document.createElement("h1");
+  const name = document.createElement("h2");
   name.textContent = result.name;
   itemText.appendChild(name);
 

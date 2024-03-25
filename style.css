@@ -89,14 +89,17 @@ button:hover {
   color: #F1f1f1;
   margin: 20px 0;
   border-radius: 20px;
-  border: 4px solid #e8e8e877;
+  border: 3px solid #f2f2f2;
+
 }
 
-.item:hover {
-  border: 4px solid #e8e8e8;
+.item:hover{
+
+  border: 3px solid #3cff00;
 }
 
-.item:hover>.item-text>h1 {
+
+.item:hover>.item-text>h2 {
   color: #3cff00;
 }
 
